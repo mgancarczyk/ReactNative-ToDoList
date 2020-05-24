@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
 import Home from '../screens/Home';
-import TodoList from '../screens/TodoList';
-import Add from '../screens/ADD';
+import TodoListScreen from '../screens/TodoList';
+import Add from '../screens/Add';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +29,7 @@ const BottomTabs: FC = () => {
             />
             <Tab.Screen
                 name="TodoList"
-                component={TodoList}
+                component={TodoListScreen}
                 options={{
                     tabBarLabel: 'TodoList',
                     tabBarIcon: ({ color, size }) => (
