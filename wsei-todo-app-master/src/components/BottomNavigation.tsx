@@ -43,7 +43,7 @@ const BottomTabs: FC = () => {
                 options={{
                     tabBarLabel: 'Add',
                     tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="plus" color={color} size={size} />
+                        <MaterialCommunityIcons name="content-paste" color={color} size={size} />
                     )
                 }}
             />

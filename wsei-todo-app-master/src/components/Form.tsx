@@ -35,8 +35,8 @@ const Form: FC<{switchView(formView: boolean)}> = props => {
     const savDate = () => {
         dispatch<setNewElementTodoList>(setNewElementTodoList({
            name: nameInput,
-           description: descriptionInput//,
-           //id: new Date().getTime()
+           description: descriptionInput,
+           id: new Date().getTime()
         } as ISingleElementList
         ));
         props.switchView(false)

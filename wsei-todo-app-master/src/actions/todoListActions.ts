@@ -5,3 +5,8 @@ export const setNewElementTodoList = (newElem: ISingleElementList) => ({
     type: actionTypes.SET_NEW_ELEM,
     newElem
 })
+
+export const removeElemTodoList = (id: number) => ({
+    type: actionTypes.REMOVE_ELEM,
+    id
+})

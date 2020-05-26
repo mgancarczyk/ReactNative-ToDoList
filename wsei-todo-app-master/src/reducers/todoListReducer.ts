@@ -1,5 +1,6 @@
 import * as actionTypes from '../actions/types/todolistTypes';
 import { ISingleElementList } from '../entities/todoSingleEl';
+import TodoList from '../components/TodoList';
 
 export interface ITodoListReducer {
     todoList: ISingleElementList[];
@@ -8,11 +9,13 @@ export interface ITodoListReducer {
 const defaultState = (): ITodoListReducer => ({
     todoList: [{
         name: 'Pierwszy',
-        description: 'Pierwszy decription'
+        description: 'Pierwszy decription',
+        id: 0
     },
     {
         name: 'Drugi',
-        description: 'Drugi decription'  
+        description: 'Drugi decription',
+        id: 1
     }]
 });
 
@@ -23,6 +26,13 @@ export default (state = defaultState(), action: any): ITodoListReducer => {
                 ...state,
                 todoList: [...state.todoList, action.newElem]
             };
+        }
+        case actionTypes.REMOVE_ELEM: {
+            return{
+                ...state,
+                todoList: state.todoList.filter(el => el.id !== action.id)
+            }
+            
         }
         default: {
             return state;

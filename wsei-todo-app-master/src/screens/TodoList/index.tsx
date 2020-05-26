@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Button, View } from 'react-native';
+import { Button, View, Image, Text, StyleSheet, ScrollView } from 'react-native';
 import styled from 'styled-components/native';
 
 import Colors from '../../constans/Colors';
@@ -11,13 +11,13 @@ const TodoListScreen = ({navigation}) => {
     const [formView, setFormView] = useState<boolean>(false);
 
     return (
-        <View>
+        <ScrollView>
             {formView ? (
                 <Form switchView={setFormView}/>
             ) : (
                 <TodoList switchView={setFormView}/>
             )}
-        </View>
+        </ScrollView>
     );
 };
 
