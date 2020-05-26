@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
 
-const AutorText = styled.Text`
+const FrancText = styled.Text`
     position: relative;
     margin-left: 20%;
     
     
     
 `;
-const AutorContainer = styled.View`
+const FrancContainer = styled.View`
     margin: 6px;
     margin-bottom: 0px;
 
@@ -25,18 +25,18 @@ const CustomImage = StyleSheet.create({
     }
 });
 
-const Autor: FC = () => {
+const Franc: FC = () => {
     return (
-        <AutorContainer>
+        <FrancContainer>
             <Image
                 style={CustomImage.margimage}
 
                 source={{ uri: 'https://zpierwszegotloczenia.pl/obrazek/435961.jpeg' }}
             />
-            <AutorText>Jej nazwa jest zwodnicza, gdyż francesinha w języku portugalskim oznacza „małą Francuzeczkę”. Jest to nazwa stojąca w całkowitym kontraście do tego bla bla bla bla.
-            </AutorText>
-        </AutorContainer>
+            <FrancText>Jej nazwa jest zwodnicza, gdyż francesinha w języku portugalskim oznacza „małą Francuzeczkę”. Jest to nazwa stojąca w całkowitym kontraście do tego bla bla bla bla.
+            </FrancText>
+        </FrancContainer>
     )
 }
 
-export default Autor;
+export default Franc;

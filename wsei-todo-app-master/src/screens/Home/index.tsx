@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { useNavigation } from '@react-navigation/native';
 
 import Colors from '../../constans/Colors';
-import Autor from '../../components/autorTab';
+import Franc from '../../components/Franc';
 
 const HomeText = styled.Text`
     margin: 0px 50px;
@@ -37,7 +37,7 @@ const Home: FC<IHomeProps> = (props) => {
         <ScrollView>
 
         <HomeText> {props.myProps}</HomeText>
-        <Autor />
+        <Franc />
 
         <View>
 

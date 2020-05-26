@@ -1,4 +1,4 @@
-# ToDo Mobile App
+# ToDo Mobile App - Michał Gancarczyk
 
 ## **Folders Structure**
 

@@ -10,12 +10,12 @@ const defaultState = (): ITodoListReducer => ({
     todoList: [{
         name: 'Pierwszy',
         description: 'Pierwszy decription',
-        id: 0
+        id: 1
     },
     {
         name: 'Drugi',
         description: 'Drugi decription',
-        id: 1
+        id: 2
     }]
 });
 
