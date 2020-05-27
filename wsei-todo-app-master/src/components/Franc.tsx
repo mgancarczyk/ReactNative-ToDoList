@@ -5,9 +5,7 @@ import styled from 'styled-components/native';
 const FrancText = styled.Text`
     position: relative;
     margin-left: 20%;
-    
-    
-    
+
 `;
 const FrancContainer = styled.View`
     margin: 6px;
@@ -20,6 +18,7 @@ const CustomImage = StyleSheet.create({
         margin: 10,
         width: 65,
         height: 65,
+        borderRadius: 65,
         position: "absolute"
         
     }

@@ -8,7 +8,7 @@ Michał Gancarczyk ToDo list.
 
 ## [1.0.0] - 2020-02-25
 
-### ButtonNavigation Home and Add Screen
+### ButtonNavigation, "Home" and "Add' Screen
 
 ## [1.1.0] - 2020-04-03
 
